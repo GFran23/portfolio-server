@@ -1,0 +1,22 @@
+CREATE TABLE projects (
+    name VARCHAR(255),
+    url VARCHAR(255),
+    description VARCHAR(255),
+    techUsed VARCHAR(255),
+    imageURL VARCHAR(255),
+    id serial PRIMARY KEY
+);
+
+INSERT INTO projects (name, url, description, techUsed, imageURL) VALUES
+('Calculator', 'https://gfran23.github.io/calculator2Project/', 'Class Project For Nebula Academy', 'JavaScript, HTML, CSS', 'https://bit.ly/33gGBTX');
+
+INSERT INTO projects (name, url, description, techUsed, imageURL) VALUES
+('Air Hockey', 'https://gfran23.github.io/airHockeyProject/', 'Class Project For Nebula Academy', 'JavaScript, HTML, CSS, Canvas', 'https://bit.ly/39IybWE');
+
+INSERT INTO projects (name, url, description, techUsed, imageURL) VALUES
+('NotFlix', 'https://gfran23.github.io/omdbPractice/', 'Class Project For Nebula Academy', 'JavaScript, HTML, CSS', 'https://bit.ly/3hUew8G');
+
+INSERT INTO projects (name, url, description, techUsed, imageURL) VALUES
+('Music API', 'https://project4.io', 'Class Project For Nebula Academy', 'JavaScript, HTML, CSS, PostgresSQL, AWS', 'https://bit.ly/336N1Vz');
+
+DELETE FROM projects WHERE id=1;  
