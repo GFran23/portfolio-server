@@ -1,10 +1,11 @@
+const info = require('./env')
 const Pool = require('pg').Pool;
 const pool = new Pool({
-    user: 'postgres',
-    host: 'portfolio-instance.cuew0g3pupoz.us-east-1.rds.amazonaws.com',
-    database: 'projects',
-    password: 'password',
-    port: '5432',
+    user: info.user,
+    host: info.host,
+    database: info.database,
+    password: info.password,
+    port: info.port,
 })
 
 const getProjects = (request, response) => {
