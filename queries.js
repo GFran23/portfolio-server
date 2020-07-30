@@ -1,4 +1,4 @@
-const info = require('./env')
+const info = require('./env.js');
 const Pool = require('pg').Pool;
 const pool = new Pool({
     user: info.user,
